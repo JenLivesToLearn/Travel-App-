@@ -3,8 +3,8 @@ import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 const button = function button(props) {
   return (
-    <TouchableOpacity style={styles.button}>
-      <Text style={styles.buttonText}>{props.value}</Text>
+    <TouchableOpacity style={props.isLink ? styles.link : styles.button}>
+      <Text style={styles.buttonText(props.isLink)}>{props.value}</Text>
     </TouchableOpacity>
   );
 };
@@ -16,9 +16,13 @@ const styles = StyleSheet.create({
     padding: 20,
   },
 
-  buttonText: {
-    fontSize: 25,
+  buttonText: (isLink) => {
+    return {fontSize: isLink ? 14 : 25}
+
   },
+  link: {
+    borderBottomWidth: 1
+  }
 });
 
 export default button;

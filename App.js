@@ -19,15 +19,21 @@ class App extends React.Component {
         <Octicons name="globe" size={64} />
         <Text style={styles.heading}>Welcome!</Text>
         <Button value='Login'/>
+        <View style={styles.row}>
+        <Text>Don't have an account?</Text><Button value='Sign up' isLink={true}/>
+        </View>
       </Container>
     );
   }
 }
-export default CategoryPage;
+export default App;
 const styles = StyleSheet.create({
   heading: {
     fontSize: 40,
   },
 
+  row: {
+    flexDirection:'row',
+  }
 
 });
