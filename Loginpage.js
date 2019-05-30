@@ -21,7 +21,7 @@ const loginPage = function loginPage() {
         <Text style={styles.label}> Password:</Text>
         <TextInput secureTextEntry={true} style={styles.textInput} />
       </View>
-      <Button />
+      <Button value='Login'/>
     </Container>
   );
 };

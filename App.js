@@ -10,6 +10,7 @@ import AssetExample from './components/AssetExample';
 import { Card } from 'react-native-paper';
 import { Octicons } from '@expo/vector-icons';
 import Loginpage from './Loginpage';
+import CategoryPage from './CategoryPage';
 import Button from './components/button';
 class App extends React.Component {
   render() {
@@ -17,16 +18,16 @@ class App extends React.Component {
       <Container>
         <Octicons name="globe" size={64} />
         <Text style={styles.heading}>Welcome!</Text>
-        <Button />
+        <Button value='Login'/>
       </Container>
     );
   }
 }
-export default Loginpage;
+export default CategoryPage;
 const styles = StyleSheet.create({
   heading: {
     fontSize: 40,
   },
-  
+
 
 });
