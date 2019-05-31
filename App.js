@@ -11,6 +11,7 @@ import { Card } from 'react-native-paper';
 import { Octicons } from '@expo/vector-icons';
 import Loginpage from './Loginpage';
 import CategoryPage from './CategoryPage';
+import CreateAccountPage from'./CreateAccountPage';
 import Button from './components/button';
 class App extends React.Component {
   render() {
@@ -26,7 +27,7 @@ class App extends React.Component {
     );
   }
 }
-export default App;
+export default CreateAccountPage;
 const styles = StyleSheet.create({
   heading: {
     fontSize: 40,
