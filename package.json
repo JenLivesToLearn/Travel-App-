@@ -5,13 +5,15 @@
   "author": null,
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
-  "scripts":{
-    "start":"expo start"
+  "scripts": {
+    "start": "expo start"
   },
   "dependencies": {
     "expo": "^32.0.0",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native-calendars": "^1.187.0",
+    "react-native-elements": "^1.1.0",
     "react-native-paper": "2.2.8"
   }
 }

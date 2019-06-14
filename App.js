@@ -13,6 +13,7 @@ import Loginpage from './Loginpage';
 import CategoryPage from './CategoryPage';
 import CreateAccountPage from'./CreateAccountPage';
 import Button from './components/button';
+import CalendarPage from './Calendar';
 class App extends React.Component {
   render() {
     return (
@@ -27,7 +28,7 @@ class App extends React.Component {
     );
   }
 }
-export default CreateAccountPage;
+export default CalendarPage;
 const styles = StyleSheet.create({
   heading: {
     fontSize: 40,
