@@ -11,7 +11,9 @@ import { Card } from 'react-native-paper';
 import { Octicons } from '@expo/vector-icons';
 import Loginpage from './Loginpage';
 import CategoryPage from './CategoryPage';
+import CreateAccountPage from'./CreateAccountPage';
 import Button from './components/button';
+import CalendarPage from './Calendar';
 class App extends React.Component {
   render() {
     return (
@@ -19,15 +21,21 @@ class App extends React.Component {
         <Octicons name="globe" size={64} />
         <Text style={styles.heading}>Welcome!</Text>
         <Button value='Login'/>
+        <View style={styles.row}>
+        <Text>Don't have an account?</Text><Button value='Sign up' isLink={true}/>
+        </View>
       </Container>
     );
   }
 }
-export default CategoryPage;
+export default CalendarPage;
 const styles = StyleSheet.create({
   heading: {
     fontSize: 40,
   },
 
+  row: {
+    flexDirection:'row',
+  }
 
 });
